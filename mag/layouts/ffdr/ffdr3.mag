@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710356977
+timestamp 1710359923
 << nwell >>
 rect 1852 1078 2172 1079
 rect 1762 1077 2274 1078
@@ -684,10 +684,6 @@ use nor  nor_0 nor
 timestamp 1710356038
 transform 1 0 924 0 1 -58
 box -646 56 86 1129
-use sky130_fd_pr__nfet_01v8_XUMWGH  sky130_fd_pr__nfet_01v8_XUMWGH_0 nor
-timestamp 1710343432
-transform 1 0 225 0 1 289
-box -125 -101 125 101
 use via_m1_p#0  via_m1_p_0
 timestamp 1646951168
 transform 1 0 1042 0 1 454
@@ -703,4 +699,5 @@ rlabel metal1 125 10 325 44 1 GND
 rlabel metal2 -322 540 72 628 1 D
 rlabel poly -288 460 -230 932 1 clk
 rlabel metal2 -304 220 490 310 1 R
+rlabel space 14 90 1510 150 1 nclk
 << end >>

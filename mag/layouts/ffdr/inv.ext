@@ -13,15 +13,15 @@ node "V" 1 170.101 86 662 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "in" 190 98.0245 142 432 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4032 316 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "V" "gnd" 7.57616
-cap "V" "out" 26.9388
 cap "in" "out" 4.15086
-cap "out" "gnd" 30.5306
-cap "grid_0/a_n24_0#" "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_n15_n101#" 3.93686
-cap "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_n15_n101#" "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_15_n75#" 1.20293
-cap "grid_0/a_n24_0#" "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_15_n75#" -14.5404
+cap "gnd" "out" 30.5306
+cap "V" "out" 26.9388
 cap "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_n15_n101#" "grid_0/w_n61_476#" 43.2164
-cap "grid_0/a_n24_0#" "grid_0/w_n61_476#" -2.29215
 cap "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_15_n75#" "grid_0/w_n61_476#" 17.917
+cap "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_n15_n101#" "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_15_n75#" 1.20293
+cap "grid_0/a_n24_0#" "grid_0/w_n61_476#" -2.29215
+cap "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_n15_n101#" "grid_0/a_n24_0#" 3.93686
+cap "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_15_n75#" "grid_0/a_n24_0#" -14.5404
 merge "grid_0/a_n24_0#" "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_n73_n75#" -122.267 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8200 -546 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__nfet_01v8_NDWVGB_0/a_n73_n75#" "gnd"
 merge "gnd" "sky130_fd_pr__nfet_01v8_NDWVGB_0/VSUBS"
