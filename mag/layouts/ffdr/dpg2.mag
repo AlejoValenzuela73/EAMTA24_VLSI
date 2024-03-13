@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710270720
+timestamp 1710356038
 << nwell >>
 rect 24 832 28 884
 << poly >>
@@ -87,7 +87,7 @@ rect -50 194 382 204
 rect -50 142 84 194
 rect 136 142 382 194
 rect -50 124 382 142
-use grid#0  grid_0 /foss/designs/EAMTA2024/EAMTA/mag
+use grid#0  grid_0
 timestamp 1709738583
 transform 1 0 61 0 1 56
 box -61 -10 259 1053
@@ -99,7 +99,7 @@ use sky130_fd_pr__pfet_01v8_527QMA  sky130_fd_pr__pfet_01v8_527QMA_0
 timestamp 1710263695
 transform 1 0 161 0 1 734
 box -162 -190 161 188
-use via_m1_p  via_m1_p_0 /foss/designs/EAMTA2024/EAMTA/mag
+use via_m1_p  via_m1_p_0
 timestamp 1646951168
 transform 1 0 74 0 1 132
 box 0 0 68 68
@@ -107,12 +107,4 @@ use via_m1_p  via_m1_p_1
 timestamp 1646951168
 transform 1 0 -8 0 1 928
 box 0 0 68 68
-<< labels >>
-rlabel space 61 56 261 90 1 gnd
-rlabel space 85 1038 232 1072 1 V
-rlabel metal2 52 916 404 1006 1 ctrl
-rlabel metal2 136 124 382 204 1 nctrl
-rlabel via1 322 820 374 872 1 A
-rlabel metal2 220 454 376 534 1 C
-rlabel via1 -50 604 2 656 1 B
 << end >>

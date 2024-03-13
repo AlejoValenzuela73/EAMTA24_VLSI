@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710275825
+timestamp 1710356977
 << nwell >>
 rect 1852 1078 2172 1079
 rect 1762 1077 2274 1078
@@ -669,7 +669,7 @@ rect 1562 108 1710 160
 rect 22 90 1710 108
 rect 1278 86 1710 90
 use dpg2  dpg2_0
-timestamp 1710270720
+timestamp 1710356038
 transform 1 0 64 0 1 -46
 box -64 46 404 1109
 use inv  inv_0
@@ -681,11 +681,11 @@ timestamp 1710275825
 transform 1 0 -278 0 1 8
 box 0 0 320 1063
 use nor  nor_0 nor
-timestamp 1710275825
+timestamp 1710356038
 transform 1 0 924 0 1 -58
 box -646 56 86 1129
 use sky130_fd_pr__nfet_01v8_XUMWGH  sky130_fd_pr__nfet_01v8_XUMWGH_0 nor
-timestamp 1710120945
+timestamp 1710343432
 transform 1 0 225 0 1 289
 box -125 -101 125 101
 use via_m1_p#0  via_m1_p_0
@@ -697,20 +697,10 @@ timestamp 1646951168
 transform 1 0 -304 0 1 886
 box 0 0 68 68
 << labels >>
-rlabel metal1 2450 356 2502 736 1 out
-rlabel metal1 2350 676 2402 1056 1 V
-rlabel metal1 2350 44 2402 424 1 gnd
-rlabel poly 2406 446 2438 572 1 in
-rlabel space 1542 502 2246 1079 1 V
-rlabel space 1565 6 2245 65 1 gnd
-rlabel metal2 1752 476 1786 510 1 A
-rlabel polycont 1764 254 1798 288 1 B
-rlabel metal1 1986 446 2274 500 1 out
-rlabel metal1 1389 18 1589 52 1 gnd
-rlabel nwell 1413 1000 1560 1034 1 V
-rlabel metal2 1380 878 1732 968 1 ctrl
-rlabel metal2 1464 86 1710 166 1 nctrl
-rlabel via1 1650 782 1702 834 1 A
-rlabel metal2 1548 416 1704 496 1 C
-rlabel via1 1278 566 1330 618 1 B
+rlabel nwell 621 996 876 1039 1 V
+rlabel metal2 2292 446 2596 538 1 Q
+rlabel metal1 125 10 325 44 1 GND
+rlabel metal2 -322 540 72 628 1 D
+rlabel poly -288 460 -230 932 1 clk
+rlabel metal2 -304 220 490 310 1 R
 << end >>
