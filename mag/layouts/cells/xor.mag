@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710533398
+timestamp 1710539684
 << nwell >>
 rect -284 1068 596 1074
 rect -284 1052 652 1068
@@ -33,8 +33,12 @@ rect 288 486 652 510
 << poly >>
 rect 286 972 556 974
 rect -224 964 218 966
-rect -224 934 222 964
-rect -224 910 -170 934
+rect -224 958 222 964
+rect -348 944 222 958
+rect -358 934 222 944
+rect -358 918 -170 934
+rect -358 786 -304 918
+rect -224 910 -170 918
 rect -218 874 -174 910
 rect 180 908 222 934
 rect 186 904 222 908
@@ -44,7 +48,9 @@ rect 286 896 324 944
 rect 470 934 594 944
 rect 286 886 316 896
 rect 522 608 594 934
-rect -216 424 -174 538
+rect -216 500 -174 538
+rect -304 464 -174 500
+rect -216 424 -174 464
 rect -120 488 -74 534
 rect 94 488 124 532
 rect -120 440 124 488
@@ -119,10 +125,11 @@ rect -278 346 -220 398
 rect 564 444 616 496
 rect 514 340 566 392
 << metal2 >>
-rect 496 632 606 636
-rect -104 620 606 632
-rect -104 568 528 620
-rect 580 568 606 620
+rect 520 620 594 628
+rect 520 612 528 620
+rect -104 568 528 612
+rect 580 612 594 620
+rect 580 568 606 612
 rect -104 556 606 568
 rect -112 546 606 556
 rect -112 528 26 546
@@ -143,6 +150,10 @@ rect -220 346 514 392
 rect -286 342 514 346
 rect -216 340 514 342
 rect 566 340 594 392
+use grid#3  grid#3_0
+timestamp 1709738583
+transform 1 0 -261 0 1 6
+box -61 -10 259 1053
 use grid#3  grid_0
 timestamp 1709738583
 transform 1 0 61 0 1 10
@@ -173,7 +184,7 @@ transform 1 0 -266 0 1 102
 box 0 0 68 68
 use via_m1_p#2  via_m1_p_1
 timestamp 1646951168
-transform 1 0 -266 0 1 896
+transform 1 0 -386 0 1 798
 box 0 0 68 68
 use via_m1_p#2  via_m1_p_2
 timestamp 1646951168
@@ -189,6 +200,6 @@ rlabel space 33 988 288 1031 1 V
 rlabel nwell -246 922 -212 956 1 A
 rlabel poly -248 120 -214 154 1 B
 rlabel space 61 10 261 44 1 gnd
-rlabel via1 528 568 580 620 1 nB
 rlabel via1 524 348 558 382 1 nA
+rlabel via1 528 568 580 620 1 nB
 << end >>
