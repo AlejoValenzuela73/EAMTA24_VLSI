@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710537314
+timestamp 1710542385
 << nwell >>
 rect 30 910 82 1008
 rect 226 908 278 1006
@@ -45,8 +45,7 @@ rect 364 10 408 204
 rect -46 448 30 518
 rect 304 506 364 576
 << metal2 >>
-rect -68 576 376 596
-rect -68 558 304 576
+rect 304 576 376 596
 rect -62 518 36 528
 rect -62 448 -46 518
 rect 30 448 36 518
@@ -64,7 +63,7 @@ timestamp 1678218586
 transform 1 0 373 0 1 10
 box -61 -10 259 1053
 use sky130_fd_pr__nfet_01v8_NDWVGB  sky130_fd_pr__nfet_01v8_NDWVGB_1
-timestamp 1709840560
+timestamp 1710263695
 transform 1 0 429 0 1 199
 box -73 -101 73 101
 use sky130_fd_pr__nfet_01v8_PLCS8W  sky130_fd_pr__nfet_01v8_PLCS8W_1
@@ -72,13 +71,13 @@ timestamp 1709840337
 transform 1 0 155 0 1 262
 box -125 -176 125 176
 use sky130_fd_pr__pfet_01v8_52K3FE  sky130_fd_pr__pfet_01v8_52K3FE_1
-timestamp 1709840560
+timestamp 1709930171
 transform 1 0 429 0 1 786
 box -109 -212 109 212
 use sky130_fd_pr__pfet_01v8_527QMA  sky130_fd_pr__pfet_01v8_527QMA_1
-timestamp 1709840706
+timestamp 1710106043
 transform 1 0 155 0 1 760
-box -161 -212 161 212
+box -162 -186 162 186
 use via_m1_p  via_m1_p_0
 timestamp 1646951168
 transform 1 0 346 0 1 342
@@ -92,9 +91,9 @@ timestamp 1646951168
 transform 1 0 -38 0 1 446
 box 0 0 68 68
 << labels >>
-rlabel metal1 280 6 354 50 1 vss
-rlabel metal1 288 984 348 1034 1 vdd
-rlabel space 92 412 122 610 1 a
-rlabel space 188 412 218 610 1 b
 rlabel metal1 508 430 610 464 1 out
+rlabel space 188 412 218 610 1 b
+rlabel space 92 412 122 610 1 a
+rlabel metal1 288 984 348 1034 1 vdd
+rlabel metal1 280 6 354 50 1 vss
 << end >>

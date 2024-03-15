@@ -1,12 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710534732
-<< error_s >>
-rect 142 838 176 864
-rect 142 836 148 838
-rect 150 834 176 838
-rect 114 808 148 834
+timestamp 1710538400
 << nwell >>
 rect 1852 1078 2172 1079
 rect 1762 1077 2274 1078
@@ -678,11 +673,11 @@ timestamp 1710532284
 transform 1 0 64 0 1 -46
 box -64 46 404 1109
 use inv  inv_0
-timestamp 1710534732
+timestamp 1710538400
 transform 1 0 1000 0 1 6
 box 0 0 320 1063
 use inv  inv_1
-timestamp 1710534732
+timestamp 1710538400
 transform 1 0 -278 0 1 8
 box 0 0 320 1063
 use nor  nor_0 nor
