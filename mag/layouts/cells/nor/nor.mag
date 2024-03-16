@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710533975
+timestamp 1710564995
 << nwell >>
 rect -426 602 86 1128
 rect -426 588 -340 602
@@ -67,12 +67,6 @@ use via_m1_p#0  via_m1_p_1
 timestamp 1646951168
 transform 1 0 -454 0 1 508
 box 0 0 68 68
-<< labels >>
-rlabel space -646 552 58 1129 1 V
-rlabel space -623 56 57 115 1 gnd
-rlabel space -436 526 -402 560 1 A
-rlabel poly -424 304 -390 338 1 B
-rlabel metal1 -202 496 86 550 1 out
 << properties >>
 string gencell sky130_fd_pr__pfet_01v8
 string library sky130

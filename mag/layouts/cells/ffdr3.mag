@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710534732
+timestamp 1710564995
 << error_s >>
 rect 142 838 176 864
 rect 142 836 148 838
@@ -678,17 +678,17 @@ timestamp 1710532284
 transform 1 0 64 0 1 -46
 box -64 46 404 1109
 use inv  inv_0
-timestamp 1710534732
+timestamp 1710564995
 transform 1 0 1000 0 1 6
 box 0 0 320 1063
 use inv  inv_1
-timestamp 1710534732
+timestamp 1710564995
 transform 1 0 -278 0 1 8
 box 0 0 320 1063
 use nor  nor_0 nor
-timestamp 1710533975
+timestamp 1710564995
 transform 1 0 924 0 1 -58
-box -646 56 86 1129
+box -454 56 86 1129
 use via_m1_p#0  via_m1_p_0
 timestamp 1646951168
 transform 1 0 1042 0 1 454
@@ -697,12 +697,4 @@ use via_m1_p#0  via_m1_p_1
 timestamp 1646951168
 transform 1 0 -304 0 1 886
 box 0 0 68 68
-<< labels >>
-rlabel nwell 621 996 876 1039 1 V
-rlabel metal2 2292 446 2596 538 1 Q
-rlabel metal1 125 10 325 44 1 GND
-rlabel metal2 -322 540 72 628 1 D
-rlabel poly -288 460 -230 932 1 clk
-rlabel metal2 -304 220 490 310 1 R
-rlabel space 14 90 1510 150 1 nclk
 << end >>

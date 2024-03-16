@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710560808
+timestamp 1710564995
 << nwell >>
 rect 30 910 82 1008
 rect 226 908 278 1006
@@ -90,10 +90,4 @@ use via_m1_p  via_m1_p_2
 timestamp 1646951168
 transform 1 0 -38 0 1 446
 box 0 0 68 68
-<< labels >>
-rlabel metal1 508 430 610 464 1 out
-rlabel space 188 412 218 610 1 b
-rlabel space 92 412 122 610 1 a
-rlabel metal1 288 984 348 1034 1 vdd
-rlabel metal1 280 6 354 50 1 vss
 << end >>
