@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1710566265
+timestamp 1710739890
 << nwell >>
 rect 16 -848 154 -828
 rect 14 -898 156 -848
@@ -2126,4 +2126,13 @@ use bctr  bctr_3
 timestamp 1710564995
 transform 1 0 1708 0 -1 -38
 box -1704 -6 2946 1082
+<< labels >>
+rlabel space 1661 -93 2100 67 1 gnd
+rlabel space 2532 1002 2650 1120 1 V
+rlabel space 798 678 4356 744 1 Q1
+rlabel space -10 516 324 590 1 CE
+rlabel space 3396 892 3748 982 1 clk
+rlabel space 812 -770 4370 -704 1 Q2
+rlabel space 4264 -1746 4316 -1694 1 Q3
+rlabel metal2 4298 -2810 4602 -2718 1 Q4
 << end >>

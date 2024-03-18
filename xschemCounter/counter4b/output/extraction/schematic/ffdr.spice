@@ -1,0 +1,79 @@
+** sch_path: /workspaces/EAMTA2024/EAMTA/xschem/counter4b/symbol/ffdr.sch
+**.subckt ffdr R clk Q D V GND
+*.iopin R
+*.iopin clk
+*.iopin Q
+*.iopin D
+*.iopin V
+*.iopin GND
+X2 D V GND net2 clk nclk tgate
+X3 Q R net4 V GND nor_gate
+X1 V GND net5 net1 inv_gate
+X4 net5 V GND net4 nclk clk tgate
+X5 net2 V GND net1 nclk clk tgate
+X6 net4 V GND net3 clk nclk tgate
+X7 V GND clk nclk inv_gate
+X8 net5 R net2 V GND nor_gate
+X9 V GND Q net3 inv_gate
+**.ends
+
+* expanding   symbol:  tgate.sym # of pins=6
+** sym_path: /workspaces/EAMTA2024/EAMTA/xschem/counter4b/symbol/tgate.sym
+** sch_path: /workspaces/EAMTA2024/EAMTA/xschem/counter4b/symbol/tgate.sch
+.subckt tgate A V GND B nctrl ctrl
+*.iopin ctrl
+*.iopin A
+*.iopin B
+*.iopin nctrl
+*.iopin GND
+*.iopin V
+XM1 A ctrl B GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 B nctrl A V sky130_fd_pr__pfet_01v8 L=0.15 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  nor_gate.sym # of pins=5
+** sym_path: /workspaces/EAMTA2024/EAMTA/xschem/counter4b/symbol/nor_gate.sym
+** sch_path: /workspaces/EAMTA2024/EAMTA/xschem/counter4b/symbol/nor_gate.sch
+.subckt nor_gate out B A V gnd
+*.iopin A
+*.iopin out
+*.iopin gnd
+*.iopin V
+*.iopin B
+XM1 out A gnd gnd sky130_fd_pr__nfet_01v8 L=0.15 W=0.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 A V V sky130_fd_pr__pfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 out B gnd gnd sky130_fd_pr__nfet_01v8 L=0.15 W=0.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 out B net1 V sky130_fd_pr__pfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  inv_gate.sym # of pins=4
+** sym_path: /workspaces/EAMTA2024/EAMTA/xschem/counter4b/symbol/inv_gate.sym
+** sch_path: /workspaces/EAMTA2024/EAMTA/xschem/counter4b/symbol/inv_gate.sch
+.subckt inv_gate V gnd in out
+*.iopin in
+*.iopin out
+*.iopin gnd
+*.iopin V
+XM1 out in gnd gnd sky130_fd_pr__nfet_01v8 L=0.15 W=0.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 out in V V sky130_fd_pr__pfet_01v8 L=0.15 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end
